@@ -5,4 +5,7 @@ public class Employee {
 	String cardNo;
 	double salary;
 	String sex;
+	public String toString(){
+		return name+" "+cardNo+" "+salary+" "+sex;
+	}
 }
