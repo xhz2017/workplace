@@ -1,0 +1,8 @@
+package com.louExpress.demo;
+
+public class Demo {
+	public static void main(String [] a){
+		Father son = new Son();
+		son.work();
+	}
+}

@@ -1,0 +1,36 @@
+package com.luoExpress.callName;
+
+import java.util.*;
+public class Utils {
+//存储
+	
+	public void init(ArrayList arrListStr) {
+		arrListStr.add("stu1");
+
+	}
+	
+//遍历
+	
+	public void show(ArrayList arrListStr) {
+		/*
+		 for(int i=0;i<arrListStr.size();i++){
+		 	System.out.print(arrListStr.get(i)+" "); 
+		 } 
+		 System.out.println();
+		 
+		 //for each,必须每个都遍历 
+		 for(String e:arrListStr){ 
+		 	System.out.print(e+" ");
+		 } 
+		 System.out.println();
+		 */
+		// 使用迭代器
+		for (Iterator<String> iterator = arrListStr.iterator(); iterator
+				.hasNext();) {
+			String str = (String) iterator.next();
+			System.out.print(str + " ");
+		}
+		System.out.println();
+	}
+//随机点名功能(Random)
+}

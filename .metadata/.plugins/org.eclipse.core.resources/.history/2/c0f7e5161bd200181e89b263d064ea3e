@@ -1,0 +1,11 @@
+package com.louExpress.exercise;
+
+public class TestProgramManage {
+	public static void main(String [] a){
+		Programmer programmer =new Programmer();
+		programmer.name="’≈…Ω";
+		programmer.id = "123456";
+		programmer.saraly =20000;
+		programmer.work();
+	}
+}

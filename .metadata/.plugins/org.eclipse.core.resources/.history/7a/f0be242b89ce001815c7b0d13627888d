@@ -1,0 +1,32 @@
+package com.luoExpress.callName;
+
+import java.util.*;
+
+public class Utils {
+	// 存储
+	public void init(ArrayList<Student> arrListStr) {
+		arrListStr.add(new Student("xie", 40, "male"));
+		arrListStr.add(new Student("DJ", 40, "male"));
+		arrListStr.add(new Student("斗牛的", 20, "male"));
+		arrListStr.add(new Student("Free Fi", 20, "female"));
+		arrListStr.add(new Student("paige", 20, "female"));
+		arrListStr.add(new Student("斑马斑", 20, "female"));
+	}
+
+	// 遍历
+	public void show(ArrayList<Student> arrListStr) {
+		// 使用迭代器
+		for (Iterator<Student> iterator = arrListStr.iterator(); iterator
+				.hasNext();) {
+			System.out.println(iterator.next());
+		}
+		// System.out.println(arrListStr);
+	}
+
+	// 随机点名功能(Random)
+	public Student randomStudent(ArrayList<Student> arrList) {
+		Random random = new Random();
+		int num = random.nextInt(arrList.size());
+		return arrList.get(num);
+	}
+}

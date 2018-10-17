@@ -1,0 +1,13 @@
+package com.louExpress.demo;
+
+public class Father {
+	public String name;
+	public String address;
+	public int age;
+	int id;
+	private double salary;
+	
+	public void work(){
+		System.out.println("I can work.");
+	}
+}

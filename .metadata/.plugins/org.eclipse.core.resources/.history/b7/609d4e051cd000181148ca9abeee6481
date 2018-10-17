@@ -1,0 +1,14 @@
+package com.louExpress.demo;
+
+public class DevelopDemo {
+	public static void main(String [] a){
+		Development dev = new JavaDevelop();
+		dev.work();		
+		Development dev2 = new AndroidDevelop();
+		dev2.work();
+		Development dev = new JavaDevelop();
+		dev.work();		
+		Development dev2 = new AndroidDevelop();
+		dev2.work();
+	}
+}

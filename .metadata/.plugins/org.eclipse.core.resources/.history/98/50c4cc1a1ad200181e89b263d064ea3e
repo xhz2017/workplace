@@ -1,0 +1,10 @@
+package com.louExpress.exercise;
+
+public class employee {
+	String name;
+	String id;
+	double saraly;
+	public void work(){
+		System.out.println("working");
+	}
+}

@@ -1,0 +1,7 @@
+package com.louExpress.demo;
+
+public class NetworkDev extends MaintainDevelop {
+	public  void work(){
+		System.out.println(super.partment+super.workNo+"正在检查网络是否畅通");
+	}
+}

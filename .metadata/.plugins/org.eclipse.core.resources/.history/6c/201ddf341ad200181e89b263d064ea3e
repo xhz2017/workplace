@@ -1,0 +1,7 @@
+package com.louExpress.exercise;
+
+public class Programmer extends Employee{
+	public void work(){
+		System.out.println("Programm: "+name +"  "+id+"  "+saraly);
+	}
+}

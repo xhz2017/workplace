@@ -1,0 +1,12 @@
+package com.luoExpress.callName;
+import java.util.*;
+public class Demo {
+
+	public static void main(String[] args) {
+		Utils utils = new Utils();
+		ArrayList<Student> list = new ArrayList();
+		utils.init(list);
+
+	}
+
+}

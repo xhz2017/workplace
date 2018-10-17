@@ -1,0 +1,6 @@
+package com.louExpress.demo;
+
+public interface Person {
+private String name;
+private int age;
+}

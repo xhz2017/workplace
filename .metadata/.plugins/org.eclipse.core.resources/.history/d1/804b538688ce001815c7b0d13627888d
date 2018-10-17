@@ -1,0 +1,17 @@
+package com.luoExpress.callName;
+import java.util.*;
+public class Demo {
+
+	public static void main(String[] args) {
+		Utils utils = new Utils();
+		ArrayList<Student> list = new ArrayList();
+		//存储
+		utils.init(list);
+		//遍历
+		utils.show(list);
+		//随机点名功能(Random)
+		utils.randomStudent(list);
+
+	}
+
+}

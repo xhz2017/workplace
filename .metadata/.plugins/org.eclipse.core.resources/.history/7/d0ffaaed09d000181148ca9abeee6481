@@ -1,0 +1,7 @@
+package com.louExpress.demo;
+
+public class Father {
+	public String name;
+	public String address;
+	public int age;
+}

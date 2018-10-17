@@ -1,0 +1,14 @@
+package com.louExpress.demo;
+
+public class Phone {
+	String num;
+	public void sendSms(){
+		System.out.println("father sendsms");
+	}
+	public void call(){
+		System.out.println("father call");
+	}
+	public void showNum(){
+		System.out.println("father showNum");
+	}
+}

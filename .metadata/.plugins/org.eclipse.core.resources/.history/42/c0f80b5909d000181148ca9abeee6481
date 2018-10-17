@@ -1,0 +1,8 @@
+package com.louExpress.demo;
+
+public class DevelopmentEmployee {
+	String name;
+	int age;
+	int salary;
+	
+}

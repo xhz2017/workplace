@@ -1,0 +1,5 @@
+package com.louExpress.demo;
+
+public abstract class Development {
+	public abstract void work();
+}
