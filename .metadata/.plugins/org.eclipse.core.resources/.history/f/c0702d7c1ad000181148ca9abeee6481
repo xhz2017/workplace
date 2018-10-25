@@ -1,6 +1,0 @@
-package com.louExpress.demo;
-
-public abstract class Emploee {
-	public String workNo;
-	public abstract void work();
-}

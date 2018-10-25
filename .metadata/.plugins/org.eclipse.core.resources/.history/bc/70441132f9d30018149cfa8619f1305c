@@ -1,0 +1,19 @@
+package com.luoExpress.interfaceDemo;
+
+public class ImplementDemo1 implements InterfaceDemo{
+
+	public void show() {
+		
+		for (int i = 0; i < 5; i++) {
+			System.out.println(i);
+		}
+	}
+
+	public void getSum() {
+		int sum;
+		for (int i = 0; i < 5; i++) {
+			System.out.println(i);
+		}
+	}
+
+}

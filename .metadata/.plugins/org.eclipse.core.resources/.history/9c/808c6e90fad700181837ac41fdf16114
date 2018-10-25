@@ -1,0 +1,13 @@
+package com.luoExpress.exercise;
+
+import java.util.ArrayList;
+
+public class Test_Animal {
+	public static void main(String[] args) {
+		Animal animal1 = new Cat();
+		Animal animal2 = new Dog();
+		ArrayList<Animal> list = new ArrayList<Animal>();
+		
+		
+	}
+}

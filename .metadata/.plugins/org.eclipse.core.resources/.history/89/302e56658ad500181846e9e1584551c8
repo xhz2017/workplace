@@ -1,0 +1,13 @@
+package com.luoExpress.interfaceDemo;
+
+public class Laptop implements USB{
+
+	public void open() {
+		System.out.println("laptop open");
+	}
+
+	public void close() {
+		System.out.println("laptop close");
+	}
+
+}

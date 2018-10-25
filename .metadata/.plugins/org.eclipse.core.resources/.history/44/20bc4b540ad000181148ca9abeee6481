@@ -1,7 +1,0 @@
-package com.louExpress.demo;
-
-public class Demo {
-	public static main(String [] a){
-		Son son = new Son();
-	}
-}

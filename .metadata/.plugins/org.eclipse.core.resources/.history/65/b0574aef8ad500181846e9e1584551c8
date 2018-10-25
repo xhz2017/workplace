@@ -1,0 +1,23 @@
+package com.luoExpress.interfaceDemo;
+
+public class Laptop{
+	Mouse mouse=new Mouse();
+	Keyborad keyboard=new Keyborad();
+	public void run(){
+		
+		mouse.open();
+		keyboard.open();
+		System.out.println("runing");
+	}
+	public void closedown(){
+		System.out.println("closedown");
+	}
+	public void open() {
+		System.out.println("laptop open");
+	}
+
+	public void close() {
+		System.out.println("laptop close");
+	}
+
+}

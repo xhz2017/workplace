@@ -1,7 +1,0 @@
-package com.louExpress.demo;
-
-public class JavaDevelop {
-	public  void work(){
-		System.out.println("androidDevelop");
-	}
-}

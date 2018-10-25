@@ -1,0 +1,8 @@
+package com.luoExpress.exercise;
+
+public class Test_Phone {
+	public static void main(String[] args) {
+		OldPhone o = new OldPhone();
+		NewPhone n = new NewPhone();
+	}
+}

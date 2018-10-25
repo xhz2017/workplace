@@ -1,0 +1,13 @@
+package com.luoExpress.interfaceDemo;
+
+public class TextDome {
+
+	public static void main(String[] args) {
+		InterfaceDemo in1 = new ImplementDemo1();
+		InterfaceDemo in2 = new ImplementDemo1();
+		in1.show();
+		System.out.println("----------------------");
+		in2.show();
+	}
+
+}

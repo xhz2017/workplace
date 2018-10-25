@@ -1,0 +1,9 @@
+package com.luoExpress.interfaceDemo;
+
+public class Test_Laptop {
+	public static void main(String[] args) {
+		Laptop la = new Laptop();
+		la.run();
+		la.closedown();
+	}
+}

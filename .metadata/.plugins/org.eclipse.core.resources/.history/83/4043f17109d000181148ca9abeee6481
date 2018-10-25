@@ -1,6 +1,0 @@
-package com.louExpress.demo;
-
-public class DevelopmentEmployee extends Employee {
-
-	
-}

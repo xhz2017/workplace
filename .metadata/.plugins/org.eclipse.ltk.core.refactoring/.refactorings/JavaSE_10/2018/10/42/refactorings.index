@@ -7,3 +7,6 @@
 1539565843705	Copy compilation unit
 1539567619799	Copy compilation unit
 1539787019594	Rename type 'employee'
+1539893200705	Extract method 'demo'
+1539893240021	Rename local variable 'arr'
+1539893780401	Extract method 'extracted'

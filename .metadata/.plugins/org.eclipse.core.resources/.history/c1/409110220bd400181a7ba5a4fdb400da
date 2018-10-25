@@ -1,0 +1,11 @@
+package com.luoExpress.interfaceDemo;
+
+public class TextDome {
+
+	public static void main(String[] args) {
+		Son son=new Son();
+		System.out.println(son.num);
+//		System.out.println(son.num2);
+	}
+
+}

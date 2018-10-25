@@ -1,0 +1,19 @@
+package com.louExpress.demo;
+
+import java.util.Scanner;
+
+public class Demo2 {
+	public static void main(String[] args) {
+		demo();
+	}
+
+	private static void demo() {
+		System.out.println("hello");
+		Scanner scanner =new Scanner(System.in);
+		int[]arr = {11,22,33,44,55};
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+}

@@ -1,9 +1,0 @@
-package com.louExpress.demo;
-
-public class Car {
-	String color;
-	int tirenum;
-	public void run(){
-		System.out.print("runing");
-	}
-}

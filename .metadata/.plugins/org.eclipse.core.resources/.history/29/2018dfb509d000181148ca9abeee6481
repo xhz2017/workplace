@@ -1,7 +1,0 @@
-package com.louExpress.demo;
-
-public class Son extends Father{
-	String name;
-	String address;
-	String int age;
-}
