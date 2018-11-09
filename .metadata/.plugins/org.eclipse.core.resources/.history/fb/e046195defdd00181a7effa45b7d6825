@@ -1,0 +1,21 @@
+package com.luoExpress.Eclipse;
+
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class test1 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		while(true){
+			String str = scanner.nextLine();
+			try {
+				int num = Integer.parseInt(str);
+				System.out.println(num);
+			} catch (NumberFormatException e) {
+				new BigInteger(str);
+				e.printStackTrace();
+			}
+		}
+
+	}
+}

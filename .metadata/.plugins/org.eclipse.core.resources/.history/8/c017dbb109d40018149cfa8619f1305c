@@ -1,6 +1,0 @@
-package com.luoExpress.interfaceDemo;
-
-public class Demo_son {
-	Son son= new Son();
-	System.out.println(son.num1);
-}

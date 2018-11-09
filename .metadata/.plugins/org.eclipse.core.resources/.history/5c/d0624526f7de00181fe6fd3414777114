@@ -1,0 +1,9 @@
+package com.luoExpress.Demo;
+
+public class Demo_String {
+	public static void main(String[] args) {
+		char[] chs = new char[]{'a','b','c','d','e'};
+		String str = new String(chs);
+		System.out.println(str.substring(3,4));
+	}
+}

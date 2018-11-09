@@ -1,0 +1,12 @@
+package com.heima.file;
+
+import java.io.File;
+
+public class DemoAllan1 {
+
+	public static void main(String[] args) {
+		File file = new File("G:\\01-JavaSE知识(学习27天)\\课件\\day19_code\\讲师代码\\day19\\src\\com\\heima\\file\\Demo1_File.java");
+		System.out.println(file.exists());
+	}
+
+}

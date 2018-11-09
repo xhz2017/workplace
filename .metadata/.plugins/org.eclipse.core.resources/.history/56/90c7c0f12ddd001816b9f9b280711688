@@ -1,0 +1,10 @@
+package com.luoExpress.Eclipse;
+
+public class Student {
+	private String name;
+	private float yuwenGrade;
+	private float shuxuGrade;
+	private float yingyuGrade;
+	private float totalGrade;
+
+}

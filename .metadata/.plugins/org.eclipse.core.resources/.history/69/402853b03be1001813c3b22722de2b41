@@ -1,0 +1,7 @@
+package com.heima.file;
+//* A:案例演示
+//* 需求：判断E盘目录下是否有后缀名为.jpg的文件，如果有，就输出该文件名称
+
+public class DemoAllan2 {
+
+}

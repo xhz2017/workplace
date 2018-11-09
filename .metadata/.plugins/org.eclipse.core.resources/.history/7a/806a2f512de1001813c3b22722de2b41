@@ -1,0 +1,16 @@
+package com.heima.file;
+
+import java.io.File;
+
+public class DemoAllan1 {
+
+	public static void main(String[] args) {
+		File father = new File("G:\\01-JavaSE知识(学习27天)\\课件\\day19_code\\讲师代码\\day19");
+		File son = new File("xxx.txt");
+		File file = new File(father,"xxx.txt");
+		System.out.println(file.exists());
+
+		System.out.println(son.getAbsolutePath());
+	}
+
+}

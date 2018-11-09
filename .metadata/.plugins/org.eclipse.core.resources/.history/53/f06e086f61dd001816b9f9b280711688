@@ -1,0 +1,15 @@
+package com.luoExpress.Eclipse;
+
+import java.util.ArrayList;
+
+public class Demo1_Collections {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("abc");
+		list.add("bcd");
+		list.add("gbc");
+		list.add("bbc");
+		list.sort(null);
+		System.out.println(list);
+	}
+}

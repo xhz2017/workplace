@@ -1,0 +1,17 @@
+package com.luo.demo;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Demo_Date {
+	public static void main(String[] args) {
+		demo1();
+	}
+
+	private static void demo1() {
+		Date date = new Date();
+		System.out.println(date);
+		SimpleDateFormat format = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ  HH:mm:ss");
+		System.out.println(format.format(date));
+	}
+}

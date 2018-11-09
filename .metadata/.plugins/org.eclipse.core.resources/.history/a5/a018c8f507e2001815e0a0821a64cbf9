@@ -1,0 +1,18 @@
+package com.heima.test;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class TestAllan2 {
+	public static void main(String[] args) throws FileNotFoundException {
+		//(1)一次读取单个字符(21.03_IO流(字符流的拷贝).avi)
+		FileReader fr = new FileReader("aaa.txt");
+		FileWriter fw = new FileWriter("shz.txt");
+		int c;
+		while((c = fr.read())!= -1){
+			
+		}
+		
+	}
+}

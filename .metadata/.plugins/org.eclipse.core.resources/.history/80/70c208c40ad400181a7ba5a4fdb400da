@@ -1,5 +1,0 @@
-package com.luoExpress.interfaceDemo;
-
-public class Father {
-	public int num1=4;
-}

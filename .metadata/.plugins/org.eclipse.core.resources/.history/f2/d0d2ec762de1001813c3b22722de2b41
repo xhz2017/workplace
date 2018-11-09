@@ -1,0 +1,14 @@
+package com.heima.file;
+
+import java.io.File;
+
+public class DemoAllan1 {
+
+	public static void main(String[] args) {
+		File father = new File("G:\\01-JavaSE知识(学习27天)\\课件\\day19_code\\讲师代码\\day19");
+		String  son = new String("xxx.txt");
+		File file = new File("G:\\01-JavaSE知识(学习27天)\\课件\\day19_code\\讲师代码\\day19",son);
+		System.out.println(file.exists());
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.luoExpress.Eclipse;
+
+public class Student {
+	private String name;
+	private double yuwenGrade;
+	private double shuxuGrade;
+	private double yingyuGrade;
+	private double totalGrade;
+	public Student() {
+		super();
+	}
+	public Student(String name, double yuwenGrade, double shuxuGrade,
+			double yingyuGrade) {
+		super();
+		this.name = name;
+		this.yuwenGrade = yuwenGrade;
+		this.shuxuGrade = shuxuGrade;
+		this.yingyuGrade = yingyuGrade;
+		this.totalGrade = yuwenGrade+shuxuGrade+yingyuGrade;
+	}
+	
+	public void setTotalGrade(double totalGrade) {
+		this.totalGrade = totalGrade;
+	}
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", yuwenGrade=" + yuwenGrade
+				+ ", shuxuGrade=" + shuxuGrade + ", yingyuGrade=" + yingyuGrade
+				+ ", totalGrade=" + totalGrade + "]";
+	}
+	public double getTotalGrade() {
+		return totalGrade;
+	}
+
+}

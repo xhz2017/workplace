@@ -1,5 +1,0 @@
-package com.luoExpress.interfaceDemo;
-
-public class Son	extends Father {
-	int num2=5;
-}

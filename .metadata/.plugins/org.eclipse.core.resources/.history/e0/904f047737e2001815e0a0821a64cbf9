@@ -1,0 +1,37 @@
+package com.heima.test;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class TestAllan3 {
+	public static void main(String[] args) {
+		//(1)从键盘接收一个文件夹路径,统计该文件夹大小
+	}
+	public static File getDir(){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入需要查找的路径");
+		File file;
+		while(true){
+			String line = sc.nextLine();
+			file = new File(line);
+			if(!file.exists()){
+				System.out.println("输入的目录不存在，请重新输入");
+			}else if(file.isFile()){
+				System.out.println("输入的是文件，不是目录，请输入目录");
+			}else{
+				return file;
+			}
+		}
+	}
+	public static void  printJavaFile(File file){
+		File[]files =file.listFiles();
+		if(files == null)return;
+		for (File file2 : files) {
+			if(file2.isFile()&&file2.getName().endsWith(".java")){
+				System.out.println(file2);
+			}else if (file2.isDirectory()){
+				printJavaFile(file2);
+			}
+		}
+	}
+}

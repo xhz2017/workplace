@@ -1,0 +1,11 @@
+package com.luoExpress.Eclipse;
+
+import java.util.Map;
+
+public class Demo_MapEntry {
+
+	public static void main(String[] args) {
+		Map<String Integer> map = new Map<String, Integer>();
+	}
+
+}

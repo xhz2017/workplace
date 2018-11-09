@@ -1,0 +1,12 @@
+package com.luoExpress.Eclipse;
+
+import java.util.HashMap;
+import java.util.HashSet;
+
+import com.luoExpress.bean.Student;
+
+public class Demo5_HashMap {
+	public static void main(String[] args) {
+		HashMap<Student, String>
+	}
+}

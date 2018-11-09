@@ -1,0 +1,46 @@
+package com.luoExpress.Eclipse;
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+import com.luoExpress.bean.Student;
+
+public class Demo_TreeMap {
+	public static void main(String[] args) {
+		//demo1();
+		//demo2();
+		String str ="sdfklajklsopejklksdkjlsflkjjknlkaew";
+		char[] srr = str.toCharArray();
+		Map<Character, Integer> map = new HashMap<Character, Integer>();
+		for (int i = 0; i < srr.length; i++) {
+			if(map.containsKey(srr[i])){
+				Integer value = map.get(srr[i]);
+				map.put(srr[i], value++);
+			}
+		}
+	}
+
+	private static void demo2() {
+		TreeMap<Student, String> tm = new TreeMap<Student, String>(new Comparator<Student>() {
+
+			public int compare(Student s1, Student s2) {
+				int num = s1.getName().compareTo(s2.getName());
+				return num==0?s1.getAge()-s2.getAge():num;
+			}
+		});
+		tm.put(new Student("zhagnsan",23), "beijing");
+		tm.put(new Student("lisi",24), "shanghai");
+		tm.put(new Student("wangwu",25), "shenzhen");
+		System.out.println(tm);
+	}
+
+	private static void demo1() {
+		TreeMap<Student, String> tm = new TreeMap<Student, String>();
+		tm.put(new Student("zhagnsan",23), "beijing");
+		tm.put(new Student("lisi",24), "shanghai");
+		tm.put(new Student("wangwu",25), "shenzhen");
+		System.out.println(tm);
+	}
+}

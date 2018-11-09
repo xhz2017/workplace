@@ -1,0 +1,8 @@
+
+public class Demo_Regex {
+	public static void main(String[] args) {
+		String phone ="18123710086";
+		String regex = "1[34578][0-9]{9}";
+		System.out.println(phone.matches(regex));
+	}
+}

@@ -1,0 +1,22 @@
+package com.luoExpress.Demo;
+
+public class Demo_String {
+	public static void main(String[] args) {
+		String string = new String("sfasafd");
+
+		int daxie = 0;
+		int xiaoxie = 0;
+		int shuzi = 0;
+		int other=0;
+
+		char[] arr = string.toCharArray();
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] >= 'A' && arr[i] <= 'Z') {
+				daxie++;
+			}else if(arr[i] >= 'a' && arr[i] <= 'z'){
+				xiaoxie++;
+			}
+		}
+
+	}
+}

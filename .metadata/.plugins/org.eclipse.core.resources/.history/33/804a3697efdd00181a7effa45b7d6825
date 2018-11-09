@@ -1,0 +1,27 @@
+package com.luoExpress.Eclipse;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class test1 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		while(true){
+			String str = scanner.nextLine();
+			try {
+				int num = Integer.parseInt(str);
+				System.out.println(num);
+			} catch (NumberFormatException e) {
+				try {
+					new BigInteger(str);
+					e.printStackTrace();
+				} catch (Exception e1) {
+					new BigDecimal(str);
+					e1.printStackTrace();
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,18 @@
+package com.luo.demo;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Demo_Date {
+	public static void main(String[] args) {
+		//demo1();
+		//求出自己已经出生多少天
+	}
+
+	private static void demo1() {
+		Date date = new Date();
+		System.out.println(date);
+		SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日  HH:mm:ss");
+		System.out.println(format.format(date));
+	}
+}

@@ -1,0 +1,62 @@
+package com.heima.file;
+
+import java.io.File;
+//* A:案例演示
+//* 需求：判断E盘目录下是否有后缀名为.jpg的文件，如果有，就输出该文件名称
+import java.io.FileFilter;
+
+public class DemoAllan2 {
+	public static void main(String[] args) {
+		// demo1();
+		//demo2();
+		
+		//使用文件名称过滤器筛选将指定文件夹下的小于200K的小文件获取并打印。
+		File dir = new File("D:");
+		File[] files = dir.listFiles(new FileFilter() {
+
+			@Override
+			public boolean accept(File pathname) {
+				if (pathname.isFile() && pathname.length()<200*1024)
+					return true;
+				return false;
+			}
+		});
+		if (files == null)
+			return;
+		for (File file : files) {
+			System.out.println(file+"大小为："+file.length());
+		}
+	}
+
+	private static void demo2() {
+		File dir = new File("E:");
+		File[] files = dir.listFiles(new FileFilter() {
+
+			@Override
+			public boolean accept(File pathname) {
+				if (pathname.isFile() && pathname.getName().endsWith(".jpg"))
+					return true;
+				return false;
+			}
+		});
+		if (files == null)
+			return;
+		for (File file : files) {
+			System.out.println(file);
+		}
+	}
+
+	private static void demo1() {
+		File dir = new File("D:");
+		File[] files = dir.listFiles();
+		if (files == null)
+			return;
+		for (File file : files) {
+			if (file.isFile()) {
+				if (file.getName().endsWith(".jpg")) {
+					System.out.println(file);
+				}
+			}
+		}
+	}
+}

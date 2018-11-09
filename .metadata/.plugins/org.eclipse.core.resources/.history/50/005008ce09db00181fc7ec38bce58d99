@@ -1,0 +1,15 @@
+package com.luoExpress.Eclipse;
+/**
+ * ∏∏¿‡
+ * @author allanxie
+ *@version 1.0
+ */
+public class Father {
+	/**
+	 * 
+	 * @return
+	 */
+	public int func(){
+		return 0;
+	}
+}

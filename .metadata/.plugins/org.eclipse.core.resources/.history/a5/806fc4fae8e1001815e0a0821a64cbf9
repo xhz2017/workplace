@@ -1,0 +1,11 @@
+package com.heima.test;
+
+import java.io.File;
+
+
+public class TestAllan {
+	public static void main(String[] args) {
+		File file =new File("˫Ԫ.jpg");
+		System.out.println(file.exists());
+	}
+}
