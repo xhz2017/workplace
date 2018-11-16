@@ -1,0 +1,16 @@
+package com.heima.threadmethod;
+
+public class Allan1_Name {
+	public static void main(String[] args) {
+		new Thread("‹Ω»ÿΩ„Ω„"){
+			public void run(){
+				System.out.println(this.getName()+"aaaa");
+			}
+		}.start();
+		new Thread("∑ÔΩ„"){
+			public void run(){
+				System.out.println(this.getName()+"bb");
+			}
+		}.start();
+	}
+}

@@ -1,0 +1,25 @@
+package com.heima.thread;
+
+public class Allan_Thread {
+	public static void main(String[] args) {
+		AllanThread al = new AllanThread();
+		al.start();
+		for(int i = 0; i < 1; i++) {
+			System.out.println("我是主线程的执行代码");
+		}
+	}
+}
+
+class Allan_Demo{
+
+	@Override
+	public void finalize(){
+		System.out.println("垃圾被清扫了");
+	}
+}
+
+class AllanThread extends Thread{
+	public void run(){
+		System.out.println("allan thread");
+	}
+}

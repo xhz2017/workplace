@@ -1,0 +1,21 @@
+package com.heima.threadmethod;
+
+public class Allan6_Yield {
+
+	public static void main(String[] args) {
+		MythreadYeild myt1 = new MythreadYeild();
+		MythreadYeild myt2 = new MythreadYeild();
+	}
+
+}
+
+class MythreadYeild extends Thread{
+	public void run(){
+		for (int i = 0; i < 1000; i++) {
+			if(i%10 == 0){
+				Thread.yield();
+			}
+			System.out.println(getName()+i);
+		}
+	}
+}

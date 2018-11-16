@@ -1,0 +1,35 @@
+package com.heima.syn;
+
+public class Allan1_Synchronized {
+	public static void main(String[] args) {
+		final Allan_Print ap = new Allan_Print();
+		new Thread(){
+			public void run(){
+				ap.print1();
+			}
+		}.start();
+		new Thread(){
+			public void run(){
+				ap.print2();
+			}
+		}.start();
+	}
+}
+
+class Allan_Print{
+	Demo demo= new Demo();
+	public void print1(){
+		System.out.println("I");
+		System.out.println("love");
+		System.out.println("you");
+	}
+	public void print2(){
+		System.out.println("wu");
+		System.out.println("xiao");
+		System.out.println("hong");
+	}
+}
+
+class Allan_demo{
+	
+}

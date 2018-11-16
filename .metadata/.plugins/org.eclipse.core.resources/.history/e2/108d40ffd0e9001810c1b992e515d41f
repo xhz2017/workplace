@@ -1,0 +1,14 @@
+package com.allan.factory2;
+
+public class Test {
+
+	public static void main(String[] args) {
+		DogFactory df = new DogFactory();
+		Dog d = (Dog) df.createAnimal();
+		d.eat();
+		CatFactory cf = new CatFactory();
+		Dog d = (Dog) df.createAnimal();
+		d.eat();
+	}
+
+}

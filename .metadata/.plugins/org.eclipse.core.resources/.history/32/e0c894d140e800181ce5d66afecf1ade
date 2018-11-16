@@ -1,0 +1,24 @@
+package com.leetcode.exercise;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Leetcode_FindAnagrams {
+	public static void main(String[] args) {
+		String s = "cbaebabacd";
+		String p = "abc";
+		char[] ch2 = p.toCharArray();
+		Arrays.sort(ch2);
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		StringBuffer sb = new StringBuffer(s);
+		for (int i = 0; i <= sb.length() - ch2.length; i++) {
+			char[] dstch = new char[ch2.length];
+			s.getChars(i, i + ch2.length, dstch, 0);
+			Arrays.sort(dstch);
+			if ((dstch != null) && (Arrays.equals(dstch, ch2))) {
+				list.add(i);
+			}
+		}
+		System.out.println(list);
+	}
+}

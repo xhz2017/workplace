@@ -1,0 +1,7 @@
+package com.allan.factory2;
+
+import com.allan.factory.Animal;
+
+public interface Factory {
+	public abstract static Animal createAnimal();
+}

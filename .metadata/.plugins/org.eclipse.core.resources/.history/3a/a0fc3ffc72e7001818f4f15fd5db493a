@@ -1,0 +1,7 @@
+package com.heima.thread;
+
+public class Allan_Thread2 {
+	public static void main(String[] args) {
+		
+	}
+}

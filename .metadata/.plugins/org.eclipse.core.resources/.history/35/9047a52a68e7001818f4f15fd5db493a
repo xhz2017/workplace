@@ -1,0 +1,16 @@
+package com.heima.test;
+
+public class LuckNum {
+	public static void main(String[] args) {
+
+	}
+	/*
+	 * 获取幸运数字
+	 * 1,返回值类型int
+	 * 2,参数列表int num
+	 */
+	public static int getLuck(int num){
+		
+		return 0;
+	}
+}

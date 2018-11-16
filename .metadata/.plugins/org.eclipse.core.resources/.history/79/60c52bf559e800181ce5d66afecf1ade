@@ -1,0 +1,11 @@
+package com.leetcode.exercise;
+
+public class LeetCode_CountSegments {
+	public static void main(String[] args) {
+		String s="Hello, my name is John";
+	}
+    public static int countSegments(String s) {
+    	String[] array= s.split(" ");
+        return array.length;
+    }
+}

@@ -1,0 +1,18 @@
+package com.heima.thread;
+
+public class Allan_Thread {
+	public static void main(String[] args) {
+		for (int i = 0; i < 10000000; i++) {
+			new Allan_Demo();
+		}
+	}
+}
+
+class Allan_Demo{
+
+	@Override
+	protected void finalize(){
+		System.out.println(1/0);
+	}
+	
+}

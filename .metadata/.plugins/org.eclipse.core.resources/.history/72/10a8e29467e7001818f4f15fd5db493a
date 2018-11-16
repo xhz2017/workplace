@@ -1,0 +1,7 @@
+package com.heima.test;
+
+public class LuckNum {
+	public static void main(String[] args) {
+		
+	}
+}

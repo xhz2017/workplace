@@ -1,0 +1,7 @@
+package com.leetcode.exercise;
+
+public class LeetCode_CountSegments {
+	public static void main(String[] args) {
+		
+	}
+}

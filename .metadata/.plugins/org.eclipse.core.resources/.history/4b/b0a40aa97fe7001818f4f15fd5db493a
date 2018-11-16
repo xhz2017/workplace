@@ -1,0 +1,19 @@
+package com.heima.threadmethod;
+
+public class Allan3_Sleep {
+	public static void main(String[] args) throws InterruptedException {
+		//demo1();
+		new Thread(){
+			public void run(){
+				System.out.println(getName()+" aaa");
+			}
+		}.start();
+	}
+
+	private static void demo1() throws InterruptedException {
+		for (int i = 20; i >= 0; i--) {
+			Thread.sleep(1000);
+			System.out.println("µ¹¼ÆÊ±µÚ" + i + "Ãë");
+		}
+	}
+}

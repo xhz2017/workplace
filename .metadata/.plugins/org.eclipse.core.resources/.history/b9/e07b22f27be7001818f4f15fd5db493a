@@ -1,0 +1,36 @@
+package com.heima.threadmethod;
+
+public class Allan1_Name {
+	public static void main(String[] args) {
+		//demo1();
+		demo2();
+	}
+
+	private static void demo2() {
+		new Thread(){
+			public void run(){
+				this.setName("‹Ω»ÿΩ„Ω„");
+				System.out.println(this.getName()+"   aaaa");
+			}
+		}.start();
+		new Thread(){
+			public void run(){
+				this.setName("∑ÔΩ„");
+				System.out.println(this.getName()+"   bb");
+			}
+		}.start();
+	}
+
+	private static void demo1() {
+		new Thread("‹Ω»ÿΩ„Ω„"){
+			public void run(){
+				System.out.println(this.getName()+"   aaaa");
+			}
+		}.start();
+		new Thread("∑ÔΩ„"){
+			public void run(){
+				System.out.println(this.getName()+"   bb");
+			}
+		}.start();
+	}
+}

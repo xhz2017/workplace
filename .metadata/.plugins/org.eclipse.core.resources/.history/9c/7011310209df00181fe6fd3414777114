@@ -1,7 +1,0 @@
-package com.luoExpress.Demo;
-
-public class Demo_Stringbuffer {
-	public static void main(String[] args) {
-		StringBuilder sb = new StringBuilder();
-	}
-}

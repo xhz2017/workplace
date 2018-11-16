@@ -1,0 +1,9 @@
+package com.heima.threadmethod;
+
+public class Allan3_Sleep {
+	public static void main(String[] args) {
+		for (int i = 20; i >=0; i--) {
+			System.out.println("µ¹¼ÆÊ±µÚ"+i+"Ãë");
+		}
+	}
+}

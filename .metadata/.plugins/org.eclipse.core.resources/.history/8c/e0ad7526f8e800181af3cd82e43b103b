@@ -1,0 +1,9 @@
+package com.heima.syn;
+
+public class Allan5_DeadLock {
+
+	public static void main(String[] args) {
+
+	}
+
+}

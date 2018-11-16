@@ -1,0 +1,31 @@
+package com.allan.thread;
+
+
+
+public class Demo1_Notify {
+	public static void main(String[] args) {
+		
+	}
+}
+class Allan_Print{
+	static int flag=1;
+	public void print1(){
+		if(flag !=1){
+			Thread.wait();
+		}
+		synchronized (this) {
+			System.out.print("xie");
+			System.out.print("hai");
+			System.out.print("zhou");
+			System.out.println();
+		}
+	}
+	public void print2(){
+		synchronized (this) {
+			System.out.print("wu");
+			System.out.print("xiao");
+			System.out.print("hong");
+			System.out.println();
+		}
+	}
+}

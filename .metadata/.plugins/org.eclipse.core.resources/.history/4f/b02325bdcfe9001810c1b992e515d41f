@@ -1,0 +1,19 @@
+package com.allan.factory;
+
+public class AnimalFactory {
+/*	public static Dog createdog(){
+		return new Dog();
+	}
+	public static Cat createcat(){
+		return new Cat();
+	}*/
+	public static Animal createAnimal(String name){
+		if(name.equals("dog")){
+			return new Dog();
+		}else if(name.equals("cat")){
+			return new Cat();
+		}else{
+			return null;
+		}
+	}
+}

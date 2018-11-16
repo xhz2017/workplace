@@ -1,0 +1,21 @@
+package com.heima.test;
+
+import java.util.ArrayList;
+
+public class LuckNum {
+	public static void main(String[] args) {
+
+	}
+	/*
+	 * 获取幸运数字
+	 * 1,返回值类型int
+	 * 2,参数列表int num
+	 */
+	public static int getLuck(int num){
+		ArrayList<Integer> alist = new ArrayList<>();
+		for (int i = 0; i < num; i++) {
+			
+		}
+		return 0;
+	}
+}

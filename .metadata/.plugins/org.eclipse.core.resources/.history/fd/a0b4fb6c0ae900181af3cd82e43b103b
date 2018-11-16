@@ -1,0 +1,58 @@
+package com.allan.thread;
+
+public class Demo1_Notify {
+	public static void main(String[] args) {
+		final Allan_Print p = new Allan_Print();
+		new Thread(){
+			public void run(){
+				try {
+					p.print1();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}.start();
+		new Thread(){
+			public void run(){
+				try {
+					p.print2();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}.start();
+	}
+}
+
+class Allan_Print {
+	static int flag = 1;
+
+	public void print1() throws InterruptedException {
+
+		synchronized (this) {
+			if (flag != 1) {
+				this.wait();
+			}
+			System.out.print("xie");
+			System.out.print("hai");
+			System.out.print("zhou");
+			System.out.println();
+			flag =2;
+			this.notify();
+		}
+	}
+
+	public void print2() throws InterruptedException {
+		synchronized (this) {
+			if (flag != 2) {
+				this.wait();
+			}
+			System.out.print("wu");
+			System.out.print("xiao");
+			System.out.print("hong");
+			System.out.println();
+			flag =1;
+			this.notify();
+		}
+	}
+}

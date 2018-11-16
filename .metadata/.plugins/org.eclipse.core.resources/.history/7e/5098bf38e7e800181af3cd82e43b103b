@@ -1,0 +1,11 @@
+package com.heima.syn;
+
+public class Allan2_Synchronized {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Allan_Print2{
+	
+}

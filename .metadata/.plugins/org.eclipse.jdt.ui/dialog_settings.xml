@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="CDC-1.1/Foundation-1.1" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
 	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
 	<item value="3" key="TypeHierarchyViewPart.orientation"/>
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
@@ -43,6 +44,9 @@
 		<item value="328" key="DIALOG_HEIGHT"/>
 		<item value="55" key="DIALOG_X_ORIGIN"/>
 		<item value="146" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="RenameInformationPopup">
+		<item value="2" key="snap_position"/>
 	</section>
 	<section name="DialogBounds_AddUnimplementedConstructorsDialog">
 		<item value="574" key="DIALOG_WIDTH"/>

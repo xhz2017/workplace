@@ -1,0 +1,56 @@
+package com.allan.thread;
+
+import java.util.concurrent.locks.ReentrantLock;
+
+public class Demo3_ReentrantLock {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Allan_Print3 {
+	ReentrantLock r = new ReentrantLock();
+	static int flag = 1;
+
+	public void print1() throws InterruptedException {
+
+		r.lock();
+			while (flag != 1) {
+				this.wait();
+			}
+			System.out.print("xie");
+			System.out.print("hai");
+			System.out.print("zhou");
+			System.out.println();
+			flag = 2;
+			this.notifyAll();;
+		r.unlock();
+	}
+
+	public void print2() throws InterruptedException {
+		r.lock();
+			while (flag != 2) {
+				this.wait();
+			}
+			System.out.print("wu");
+			System.out.print("xiao");
+			System.out.print("hong");
+			System.out.println();
+			flag = 3;
+			this.notifyAll();
+		r.unlock();
+	}
+	public void print3() throws InterruptedException {
+		r.lock();
+			while (flag != 3) {
+				this.wait();
+			}
+			System.out.print("I");
+			System.out.print(" love");
+			System.out.print(" you");
+			System.out.println();
+			flag = 1;
+			this.notifyAll();
+		r.unlock();
+	}
+}

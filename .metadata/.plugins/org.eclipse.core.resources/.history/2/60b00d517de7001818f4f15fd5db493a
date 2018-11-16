@@ -1,0 +1,18 @@
+package com.heima.threadmethod;
+
+public class Allan2_CurrentThread {
+	public static void main(String[] args) {
+		new Thread(){
+			public void run(){
+				System.out.println(getName()+" aaa");
+			}
+		}.start();
+		new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				System.out.println(Thread.currentThread().getName()+" bb");
+			}
+		}).start();
+	}
+}

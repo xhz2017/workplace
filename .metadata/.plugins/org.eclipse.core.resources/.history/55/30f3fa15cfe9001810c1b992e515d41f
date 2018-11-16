@@ -1,0 +1,5 @@
+package com.allan.factory;
+
+public class AnimalFactory {
+
+}

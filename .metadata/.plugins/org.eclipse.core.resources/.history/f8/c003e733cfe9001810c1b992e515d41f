@@ -1,0 +1,10 @@
+package com.allan.factory;
+
+public class AnimalFactory {
+	public Dog createdog(){
+		return new Dog();
+	}
+	public Cat createcat(){
+		return new Cat();
+	}
+}

@@ -1,0 +1,7 @@
+package com.allan.thread;
+
+public class Demo5_Executors {
+	public static void main(String[] args) {
+		
+	}
+}

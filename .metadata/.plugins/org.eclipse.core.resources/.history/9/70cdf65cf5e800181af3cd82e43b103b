@@ -1,0 +1,9 @@
+package com.heima.syn;
+
+public class Allan3_Ticket {
+
+	public static void main(String[] args) {
+
+	}
+
+}

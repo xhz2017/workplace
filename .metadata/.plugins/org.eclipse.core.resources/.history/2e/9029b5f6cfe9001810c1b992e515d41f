@@ -1,0 +1,11 @@
+package com.allan.factory;
+
+public class Test {
+
+	public static void main(String[] args) {
+		AnimalFactory af = new AnimalFactory();
+		Dog d = (Dog) af.createAnimal("dog");
+		Cat c = af.createAnimal("cat");
+	}
+
+}

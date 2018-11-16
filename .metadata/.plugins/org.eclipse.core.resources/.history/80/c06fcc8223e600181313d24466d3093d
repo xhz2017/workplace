@@ -1,0 +1,25 @@
+package com.luo.map;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class DemoMap {
+	public static void main(String[] args) {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("1", "Mon");
+		map.put("2", "Tues");
+		 System.out.println(map);
+		 System.out.println(map.put("1", "monday"));
+		 System.out.println(map.remove("1"));
+		 System.out.println(map);
+		 Set<String> keySet = map.keySet();
+		 Iterator<String> iterator = keySet.iterator();
+		 while (iterator.hasNext()) {
+			String key = (String) iterator.next();
+			String value = map.get(key);
+			System.out.println(key+" "+value);
+		}
+	}
+}
