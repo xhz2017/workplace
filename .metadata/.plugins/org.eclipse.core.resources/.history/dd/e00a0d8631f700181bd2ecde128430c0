@@ -27,7 +27,7 @@ public class TranslatorNum {
 			list.addFirst(changeData(n,m));
 			
 		}
-		return;
+		return list;
 	}*/
 
 	private static String changeData(int n, int m) {
