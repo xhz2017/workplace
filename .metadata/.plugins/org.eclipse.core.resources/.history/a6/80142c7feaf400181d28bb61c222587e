@@ -1,0 +1,5 @@
+package com.luo.exception;
+
+public class MyRunnable implements Runnable {
+
+}

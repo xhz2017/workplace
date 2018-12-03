@@ -1,0 +1,18 @@
+package com.allan.exercise;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.net.Socket;
+
+public class Exer2_Client {
+	
+	//* 客户端向服务器上传文件
+	public static void main(String[] args) throws Exception {
+		Socket socket = new Socket("127.0.0.1",12345);
+		OutputStream os = socket.getOutputStream();
+		FileInputStream fi = new FileInputStream("a.txt");
+	}
+}

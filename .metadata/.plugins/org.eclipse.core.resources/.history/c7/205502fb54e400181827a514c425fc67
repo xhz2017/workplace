@@ -1,7 +1,0 @@
-package com.luo.demo;
-
-public class Demo_Date {
-	public static void main(String[] args) {
-		
-	}
-}

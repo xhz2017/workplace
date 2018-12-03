@@ -1,7 +1,0 @@
-package com.allan.factory;
-
-public class AnimalFactory {
-	public Dog createdog(){
-		return new dog();
-	}
-}

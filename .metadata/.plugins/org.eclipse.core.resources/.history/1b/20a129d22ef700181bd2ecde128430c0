@@ -1,0 +1,33 @@
+package com.luo.exception;
+
+import java.util.LinkedList;
+
+public class TranslatorNum {
+	public static void main(String[] args) {
+		int n=59;
+		int m=16;
+		
+		System.out.println(translator(n,m));
+	}
+
+	private static LinkedList translator(int n, int m) {
+		LinkedList<String> list = new LinkedList();
+		list.addFirst(changedata(n,m));
+		while(n/m>0){
+			n = n/m;
+			list.addFirst(String.valueOf(n%m));
+			
+		}
+		return list;
+	}
+
+	private static String changedata(int n, int m) {
+		if(n%m<10){
+			String.valueOf(n%m);
+		}else{
+			
+		}
+				
+		return null;
+	}
+}

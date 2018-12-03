@@ -1,0 +1,19 @@
+package com.luo.exception;
+
+public class TranslatorNum {
+	public static void main(String[] args) {
+		int n=90;
+		int m=2;
+		
+		translator(n,m);
+	}
+
+	private static StringBuffer translator(int n, int m) {
+		StringBuffer sb = new StringBuffer();
+		while(n/m>0){
+			n = n/m;
+			sb.append(n%m);
+		}
+		return sb;
+	}
+}

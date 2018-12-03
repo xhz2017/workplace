@@ -1,0 +1,10 @@
+package com.luo.exception;
+
+public class TranslatorNum {
+	public static void main(String[] args) {
+		int n=90;
+		int m=2;
+		
+		translator(n,m);
+	}
+}

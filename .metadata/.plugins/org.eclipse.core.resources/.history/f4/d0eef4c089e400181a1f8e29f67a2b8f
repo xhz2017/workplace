@@ -1,7 +1,0 @@
-package com.luo.collection;
-
-public class ListDemo {
-	public static void main(String[] args) {
-		
-	}
-}

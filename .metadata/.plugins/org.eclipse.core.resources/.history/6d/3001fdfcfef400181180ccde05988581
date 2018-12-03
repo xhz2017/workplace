@@ -1,0 +1,30 @@
+package com.luo.exception;
+
+import java.util.ArrayList;
+
+public class Ticket implements Runnable {
+	//共100票
+	int ticket = 100;
+	int[] arr = {10,5,20,50,100,200,500,800,2,80,300}; 
+	ArrayList list = new ArrayList(arr);
+	list.add(arr);
+	//定义锁对象
+	Object lock = new Object();
+	public void run() {
+		//模拟卖票
+		while(true){
+			//同步代码块
+			synchronized (lock){
+				if (ticket > 0) {
+					//模拟电影选坐的操作
+					try {
+						Thread.sleep(10);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+					System.out.println(Thread.currentThread().getName() + "正在卖票:" + ticket--);
+				}
+			}
+		}
+	}
+}

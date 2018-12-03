@@ -1,9 +1,0 @@
-package com.heima.threadmethod;
-
-public class Allan6_Yield {
-
-	public static void main(String[] args) {
-
-	}
-
-}

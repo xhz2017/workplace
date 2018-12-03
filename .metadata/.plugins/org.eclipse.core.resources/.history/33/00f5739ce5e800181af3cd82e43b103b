@@ -1,7 +1,0 @@
-package com.heima.syn;
-
-public class Allan1_Synchronized {
-	public static void main(String[] args) {
-		
-	}
-}

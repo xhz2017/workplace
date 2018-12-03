@@ -1,0 +1,28 @@
+package com.luo.exception;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int[] arr = { 1, 2, 4, 6, 85, 3, 68, 90, 7 };
+		sortArray(arr);
+	}
+
+	private static void sortArray(int[] arr) {
+		if (arr == null)
+			return;
+		if (arr.length < 2)
+			return;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length - i - 1; j++) {
+				if (arr[j] > arr[j + 1]) {
+					int temp = arr[j + 1];
+					arr[j + 1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}

@@ -1,7 +1,0 @@
-package com.leetcode.exercise;
-
-public class LeetCode_Isomorphic {
-	public static void main(String[] args) {
-		
-	}
-}

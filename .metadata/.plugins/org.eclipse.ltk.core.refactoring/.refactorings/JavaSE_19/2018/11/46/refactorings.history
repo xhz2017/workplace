@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.luo.map&apos; to &apos;com.luo.exception&apos;&#x0D;&#x0A;- Original project: &apos;JavaSE_19&apos;&#x0D;&#x0A;- Original element: &apos;JavaSE_19/src/com.luo.map&apos;&#x0D;&#x0A;- Renamed element: &apos;JavaSE_19/src/com.luo.exception&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.luo.map&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.luo.map" name="com.luo.exception" qualified="false" references="true" stamp="1542423292914" textual="false" version="1.0"/>
+</session>

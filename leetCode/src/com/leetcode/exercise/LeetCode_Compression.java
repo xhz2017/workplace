@@ -6,37 +6,37 @@ import java.util.Map;
 
 public class LeetCode_Compression {
 	public static void main(String[] args) {
-		char[] chars = { 'a', 'b', 'b' , 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'a', 'a'};
+		char[] chars = { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b',
+				'a', 'a' };
 		System.out.println(compress(chars));
 		System.out.println(chars);
 	}
+
 	public static int compress(char[] chars) {
 		StringBuffer sb = new StringBuffer();
 		sb.append(chars[0]);
-		int count=1;
+		int count = 1;
 		for (int i = 1; i < chars.length; i++) {
-			if(chars[i]!=chars[i-1]){
-				if(count>1){
+			if (chars[i] != chars[i - 1]) {
+				if (count > 1) {
 					sb.append(Integer.toString(count).toCharArray());
 				}
 				sb.append(chars[i]);
-				count=1;
-			}else{
+				count = 1;
+			} else {
 				count++;
-				if(i==chars.length-1){
-					if(count>1)
+				if (i == chars.length - 1) {
+					if (count > 1)
 						sb.append(Integer.toString(count).toCharArray());
 				}
 			}
 		}
-		if (sb.length() <= chars.length) {
-			for (int i = 0; i < sb.length(); i++) {
-				chars[i] = sb.charAt(i);
-			}
-			return sb.length();
+		for (int i = 0; i < sb.length(); i++) {
+			chars[i] = sb.charAt(i);
 		}
-		return chars.length;
+		return sb.length();
 	}
+
 	public static int compress3(char[] chars) {
 		Map<Character, Integer> map = new LinkedHashMap<Character, Integer>();
 		for (int i = 0; i < chars.length; i++) {
@@ -61,14 +61,12 @@ public class LeetCode_Compression {
 				sb.append(value);
 		}
 		char[] ar = sb.toString().toCharArray();
-		if (ar.length < chars.length) {
-			for (int i = 0; i < ar.length; i++) {
-				chars[i] = ar[i];
-			}
-			return ar.length;
-		}
 
-		return chars.length;
+		for (int i = 0; i < ar.length; i++) {
+			chars[i] = ar[i];
+		}
+		return ar.length;
+
 	}
 
 	public static int compress2(char[] chars) {
